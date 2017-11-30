@@ -20,3 +20,14 @@ Route::get('mypage',function() {
 	echo "Welcome to my page";
 });
 
+Route::get('/', function () {
+ 	return view('website.index');
+
+});
+Route::get('/account', function () {
+ 	return view('website.account');
+});
+
+Route::get('/register', function () {
+ 	return view('website.register');
+});
