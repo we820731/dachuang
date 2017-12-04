@@ -23,7 +23,7 @@ return [
     'text_default_help_text'      => '您只能輸入字母',
     'text_default_help_url'       => '請輸入有效的 URL',
     'text_dashboard'              => '儀錶板',
-    'text_prefix_option'          => '** Please select a',
+    'text_prefix_option'          => '** 請選擇',
     'text_loading'                => 'Please wait loading...',
 
     'message_after_logout'    => 'Thank You, See You Later !',
@@ -140,9 +140,9 @@ return [
     'controller_route_404' => 'Controller / Route Not Found',
     'home'                 => '首頁',
 
-    'Privileges_Roles'    => '角色特權',
-    'Add_New_Privilege'   => '新增特權',
-    'List_Privilege'      => '特權清單',
+    'Privileges_Roles'    => '角色權限',
+    'Add_New_Privilege'   => '新增權限',
+    'List_Privilege'      => '權限清單',
     'add_user'            => '新增使用者',
     'List_users'          => '使用者清單',
     'Menu_Management'     => '功能表管理',
