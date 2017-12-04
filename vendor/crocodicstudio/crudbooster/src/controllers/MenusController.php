@@ -112,8 +112,8 @@ use CRUDBooster;
 			$this->col[] = array("label"=>"Privileges","name"=>"id_cms_privileges","join"=>"cms_privileges,name");
 
 			$this->form   = array();
-			$this->form[] = array("label"=>"Name","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|min:3|max:255|alpha_spaces","placeholder"=>"You can only enter the letter only");
-			$this->form[] = array("label"=>"Type","name"=>"type","type"=>"radio","required"=>TRUE,'dataenum'=>['Module','Statistic','URL','Controller & Method','Route'],'value'=>'Module');			
+			$this->form[] = array("label"=>"名稱","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|min:3|max:255|alpha_spaces","placeholder"=>"You can only enter the letter only");
+			$this->form[] = array("label"=>"類型","name"=>"type","type"=>"radio","required"=>TRUE,'dataenum'=>['Module','Statistic','URL','Controller & Method','Route'],'value'=>'Module');			
 
 			$this->form[] = array("label"=>"Module","name"=>"module_slug","type"=>"select","datatable"=>"cms_moduls,name","datatable_where"=>"is_protected = 0","value"=>$id_module);
 			$this->form[] = array("label"=>"Statistic","name"=>"statistic_slug","type"=>"select","datatable"=>"cms_statistics,name","style"=>"display:none","value"=>$id_statistic);
@@ -124,7 +124,7 @@ use CRUDBooster;
 			
 			$custom       = view('crudbooster::components.list_icon',compact('fontawesome','row'))->render();
 			$this->form[] = ['label'=>'Icon','name'=>'icon','type'=>'custom','html'=>$custom,'required'=>true];
-			$this->form[] = ['label'=>'Color','name'=>'color','type'=>'select2','dataenum'=>['normal','red','green','aqua','light-blue','red','yellow','muted'],'required'=>true,'value'=>'normal'];
+			$this->form[] = ['label'=>'顏色','name'=>'color','type'=>'select2','dataenum'=>['normal','red','green','aqua','light-blue','red','yellow','muted'],'required'=>true,'value'=>'normal'];
 			$this->form[] = array("label"=>"Active","name"=>"is_active","type"=>"radio","required"=>TRUE,"validation"=>"required|integer","dataenum"=>array('1|Active','0|InActive'),'value'=>'1');
 			$this->form[] = array("label"=>"Dashboard","name"=>"is_dashboard","type"=>"radio","required"=>TRUE,"validation"=>"required|integer","dataenum"=>array('1|Yes','0|No'),'value'=>'0');
 
@@ -179,7 +179,7 @@ use CRUDBooster;
 
 	  	$return_url = Request::fullUrl();
 
-	  	$page_title = 'Menu Management';
+	  	$page_title = 'Menu管理';
 
 	  	return view('crudbooster::menus_management',compact('menu_active','menu_inactive','privileges','id_cms_privileges','return_url','page_title'));
 	  }

@@ -106,7 +106,7 @@
 
               <form method='get' action='' id='form-privilege'>
                 <div class='form-group'>
-                <label class='label-control'>Selected Privilege <a href='#' title='Select the privilege you wish for the menu'>(?)</a></label>
+                <label class='label-control'>選擇權限<a href='#' title='選擇您希望的Menu權限'>(?)</a></label>
                 <select class='form-control' onChange="$('#form-privilege').submit()" name='id_cms_privileges'>                  
                     @foreach($privileges as $p)
                       <option value='{{$p->id}}' {{($id_cms_privileges == $p->id)?"selected":""}}>{{$p->name}}</option>
@@ -122,7 +122,7 @@
 
                 <div class="panel panel-success">
                   <div class="panel-heading">
-                    <strong>Menu Order (Active)</strong> <span id='menu-saved-info' style="display:none" class='pull-right text-success'><i class='fa fa-check'></i> Menu Saved !</span>
+                    <strong>Menu 順序 (Active)</strong> <span id='menu-saved-info' style="display:none" class='pull-right text-success'><i class='fa fa-check'></i> Menu 儲存 !</span>
                   </div>
                   <div class="panel-body clearfix">
                     <ul class='draggable-menu draggable-menu-active'>
@@ -147,7 +147,7 @@
 
                 <div class="panel panel-danger">
                   <div class="panel-heading">
-                    <strong>Menu Order (Inactive)</strong>
+                    <strong>Menu 順序 (Inactive)</strong>
                   </div>
                   <div class="panel-body clearfix">
                     <ul class='draggable-menu draggable-menu-inactive'>
@@ -175,7 +175,7 @@
               <div class="col-sm-7">
                   <div class="panel panel-primary">
                     <div class="panel-heading">
-                      Add Menu
+                      新增 Menu
                     </div>
                     <div class="panel-body">
                       <form class='form-horizontal' method='post' id="form" enctype="multipart/form-data" action='{{CRUDBooster::mainpath("add-save")}}'>
