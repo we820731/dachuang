@@ -65,9 +65,9 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
-            <li><a href="#" class='btn-show-sidebar' data-toggle="control-sidebar"><i class='fa fa-bars'></i> Add Widget</a></li>
+            <li><a href="#" class='btn-show-sidebar' data-toggle="control-sidebar"><i class='fa fa-bars'></i> 新增小工具</a></li>
 
-            <li><a href="{{CRUDBooster::mainpath()}}"><i class='fa fa-sign-out'></i> Exit</a></li>
+            <li><a href="{{CRUDBooster::mainpath()}}"><i class='fa fa-sign-out'></i> 離開</a></li>
           </ul>
         </div>
         <!-- /.navbar-custom-menu -->

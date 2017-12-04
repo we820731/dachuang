@@ -37,10 +37,10 @@
 			$this->button_import       = FALSE;							      
 
 			$this->col         = array();
-			$this->col[]       = array("label"=>"Name","name"=>"name" );
+			$this->col[]       = array("label"=>"名稱","name"=>"name" );
 			
 			$this->form        = array();
-			$this->form[]      = array("label"=>"Name","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|min:3|max:255","placeholder"=>"You can only enter the letter only");
+			$this->form[]      = array("label"=>"名稱","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|min:3|max:255","placeholder"=>"You can only enter the letter only");
 			
 			$this->addaction   = array();
 			$this->addaction[] = ['label'=>'Builder','url'=>CRUDBooster::mainpath('builder').'/[id]','icon'=>'fa fa-wrench'];
