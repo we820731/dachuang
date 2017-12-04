@@ -21,13 +21,13 @@
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="box-body">
 					<div class='form-group'>
-						<label>Privilege Name</label>
+						<label>權限名稱</label>
 						<input type='text' class='form-control' name='name' required value='{{ @$row->name }}'/>
 						<div class="text-danger">{{ $errors->first('name') }}</div>
 					</div>
 
 					<div class='form-group'>
-						<label>Set as Superadmin</label><br/>
+						<label>設置為 Superadmin</label><br/>
 						<div id='set_as_superadmin' class='radio inline'>
 							<label><input required {{ (@$row->is_superadmin==1)?'checked':'' }} type='radio' name='is_superadmin' value='1'/> Yes</label> &nbsp;&nbsp;
 							<label><input {{ (@$row->is_superadmin==0)?'checked':'' }} type='radio' name='is_superadmin' value='0'/> No</label>
@@ -36,7 +36,7 @@
 					</div>
 
 					<div class='form-group'>
-						<label>Theme Color</label>
+						<label>主題顏色</label>
 						<select name='theme_color' class='form-control' required>
 							<option value=''>** Choose Backend Theme Color</option>
 							<?php 
@@ -69,7 +69,7 @@
 					</div>
 	
 					<div id='privileges_configuration' class='form-group'>
-						<label>Privileges Configuration</label>
+						<label>權限配置</label>
 						<script>
 							$(function() {
 								$("#is_visible").click(function() {

@@ -30,7 +30,7 @@ class PrivilegesController extends CBController {
 
 		$this->col   = array();
 		$this->col[] = array("label"=>"ID","name"=>"id");
-		$this->col[] = array("label"=>"Name","name"=>"name");
+		$this->col[] = array("label"=>"名稱","name"=>"name");
 		$this->col[] = array("label"=>"Superadmin","name"=>"is_superadmin",'callback_php'=>'($row->is_superadmin)?"<span class=\"label label-success\">Superadmin</span>":"<span class=\"label label-default\">Standard</span>"');
 
 		$this->form   = array();
@@ -50,7 +50,7 @@ class PrivilegesController extends CBController {
 		}
 
 		$id = 0; 
-		$data['page_title'] = "Add Data";	
+		$data['page_title'] = "新增資料";	
 		$data['moduls'] = DB::table("cms_moduls")
 		->where('is_protected',0)
 		->select("cms_moduls.*",
